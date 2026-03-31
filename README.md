@@ -1,6 +1,12 @@
-# devops-satc
-Aula de devops 
+# React + Vite
 
-DevOps é uma cultura e conjunto de práticas que integra as áreas de desenvolvimento (Dev) e operações (Ops) para melhorar a colaboração, automatizar processos e acelerar a entrega de software com qualidade e estabilidade. O foco está em integração contínua (CI), entrega contínua (CD), infraestrutura como código e monitoramento, buscando reduzir falhas, aumentar a eficiência e eliminar a separação tradicional entre quem desenvolve e quem mantém os sistemas.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-SRE (Site Reliability Engineering) é uma abordagem criada pelo Google que aplica princípios de engenharia de software às operações de infraestrutura, com foco principal em confiabilidade, escalabilidade e disponibilidade dos sistemas. Utiliza métricas como SLI, SLO e SLA, além do conceito de error budget, para equilibrar inovação e estabilidade, priorizando automação e decisões orientadas por dados para manter serviços altamente confiáveis.
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
