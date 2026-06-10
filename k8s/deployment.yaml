@@ -24,6 +24,13 @@ spec:
       containers:
       - name: app-satc
         image: docker.io/##DOCKER_USERNAME##/satc-devops:##K8S_TAG##
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
         ports:
         - containerPort: 3000
           name: http
@@ -33,6 +40,14 @@ spec:
             port: http
           initialDelaySeconds: 10
           periodSeconds: 15
+          timeoutSeconds: 3
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: http
+          initialDelaySeconds: 5
+          periodSeconds: 10
           timeoutSeconds: 3
           failureThreshold: 3
 ---
